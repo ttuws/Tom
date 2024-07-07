@@ -1,0 +1,28 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+
+
+local w = library:CreateWindow("TOM • EVADE V1")
+
+
+local b = w:CreateFolder("Main")
+
+
+b:Button("Respawn",function()
+game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+end)
+
+b:Button("Speed",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ttuws/Speed-by-tom/main/speed%20by%20tom.txt"))() 
+end)
+
+b:Button("Boddy red",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ttuws/Esp/main/1.txt"))() 
+end)
+
+b:Button("Fullbright",function()
+game:GetService("Lighting").Brightness = 2
+game:GetService("Lighting").ClockTime = 14
+game:GetService("Lighting").FogEnd = 100000
+game:GetService("Lighting").GlobalShadows = false
+game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+end)
